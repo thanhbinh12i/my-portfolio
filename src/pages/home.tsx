@@ -8,7 +8,7 @@ import ResizeButton from "../components/sections/resize.button";
 import { useTranslation } from "react-i18next";
 import Divider from "../components/sections/divider";
 import Experience from "../components/sections/experience";
-import Skill from "../components/sections/skill";
+import Skill from "components/sections/skill";
 
 const HomePage = () => {
     const { t } = useTranslation();

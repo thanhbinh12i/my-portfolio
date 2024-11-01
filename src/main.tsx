@@ -10,6 +10,7 @@ import Layout from './layout';
 import HomePage from './pages/home';
 import ProjectPage from './pages/project';
 import AboutPage from './pages/about';
+import { AppContextProvider } from './components/context/app.context';
 
 const router = createBrowserRouter([
   {

@@ -1,6 +1,6 @@
 // import nestImg from '../assets/project/nestjs.png';
 // import nextjsImg from '../assets/project/nextjs.jpeg';
-// import reactNativeImg from '../assets/project/react-native.png';
+import reactNativeImg from '../assets/project/react-native.png';
 // import reactUltimateImg from '../assets/project/react-ultimate.png';
 // import springMvcImg from '../assets/project/spring-mvc.png';
 // import springRestImg from '../assets/project/spring-rest.png';
@@ -13,13 +13,38 @@ export const APP_DATA = {
 }
 
 export const EXPERIENCES = [
+  {
+    id: 1,
+    title: {
+        vi: "Sinh Viên",
+        en: "Student"
+    },
+    company: {
+        vi: "Đại Học FPT HCM.",
+        en: "FPT UNIVERSITY HCM Ltd."
+    },
+    duration: {
+        vi: "2022 - Hiện tại",
+        en: "2022 - Present"
+    }
+},
+
 ]
 
 export const PROJECTS = [
-    
+  {
+    id: 1,
+    imgPath: reactNativeImg,
+    title: "React",
+    description: "",
+    githubLink: "",
+    demoLink: ""
+},
+
 ]
 
 export const SKILLS_DATA = [
+    'C',
     'HTML',
     'CSS',
     'Javascript',

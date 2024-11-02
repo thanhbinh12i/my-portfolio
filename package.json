@@ -15,6 +15,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@rollup/rollup-linux-x64-gnu": "^4.24.3",
     "bootstrap": "5.3.3",
     "i18next": "23.16.0",
     "i18next-browser-languagedetector": "8.0.0",

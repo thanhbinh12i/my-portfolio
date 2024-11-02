@@ -1,10 +1,17 @@
-import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
-function ProjectCard(props) {
+interface IProps{
+    imgPath: string,
+    title: string,
+    description: string,
+    githubLink: string,
+    demoLink: string
+}
+
+function ProjectCard(props: IProps) {
     return (
         <Card className="project-card-view">
             <Card.Img variant="top" src={props.imgPath} alt="card-img" style={{ maxHeight: 215 }} />
@@ -19,7 +26,7 @@ function ProjectCard(props) {
                     <div>
                         <Button variant="primary" href={props.githubLink} target="_blank">
                             <BsGithub /> &nbsp;
-                            {props.isBlog ? "Blog" : "GitHub"}
+                            "GitHub"
                         </Button>
 
                         <Button

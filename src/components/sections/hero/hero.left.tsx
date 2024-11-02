@@ -7,7 +7,11 @@ import { AiFillFire } from "react-icons/ai";
 import ResizeButton from "../resize.button";
 import SocialMedia from "../social.media";
 
-const HeroLeft = () => {
+interface IProps{
+    scrollToExperienceSection?: () => void;
+}
+
+const HeroLeft = (props: IProps) => {
 
     const { t } = useTranslation();
 
@@ -46,6 +50,7 @@ const HeroLeft = () => {
             </div>
             <div className="d-md-flex d-none gap-4">
                 <ResizeButton
+                    onClick={props.scrollToExperienceSection}
                     btnText={t("heroSection.exp")}
                     btnIcons={<AiFillFire style={{ color: "orange" }} />}
                     btnStyle={{

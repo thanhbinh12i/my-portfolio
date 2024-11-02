@@ -1,9 +1,14 @@
-import Lottie from "lottie-react";
+import Lottie, { LottieRefCurrentProps } from "lottie-react";
 import { useEffect, useMemo, useRef } from "react";
 
-const AnimationLottie = ({ animationPath, width = "95%" }) => {
+interface IProps{
+  animationPath: any,
+  width: string
+}
 
-  const lottieRef = useRef();
+const AnimationLottie = ({ animationPath, width = "95%" }: IProps) => {
+
+  const lottieRef = useRef<LottieRefCurrentProps>();
 
   const defaultOptions = useMemo(
     () => {
@@ -21,7 +26,11 @@ const AnimationLottie = ({ animationPath, width = "95%" }) => {
   );
 
   useEffect(() => {
-    return () => lottieRef.current.destroy();
+    return () => {
+      if (lottieRef && lottieRef.current)
+        lottieRef?.current.destroy()
+    };
+;
   }, [])
 
   return (

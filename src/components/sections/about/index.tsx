@@ -1,8 +1,8 @@
 import { Col, Row } from "react-bootstrap";
 import AnimationLottie from "../../share/animation-lottie";
 import codingJSON from '../../../assets/lottie/coding.json';
-import { DEVELOPMENT_LOTTIE } from "../../../assets/lottie/string/development";
-import { CONTACT_LOTTIE } from "../../../assets/lottie/string/contact";
+import { DEVELOPMENT_LOTTIE } from "assets/lottie/string/development";
+import { CONTACT_LOTTIE } from "assets/lottie/string/contact";
 
 import GlowCard from "../../share/glow-card";
 import { FaGraduationCap } from "react-icons/fa6";

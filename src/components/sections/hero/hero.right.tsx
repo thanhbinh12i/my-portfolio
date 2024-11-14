@@ -25,11 +25,23 @@ const HeroRight = () => {
                         </span>
                     </div>
                     <div className="ms-4 me-2 text-pink-200">
-                        <span className="text-white-0">skills:</span>
+                        <span className="text-white-0">skills: </span>
                         <span>{`['`}</span>
+                        <span >HTML</span>
+                        <span>{"', '"}</span>
+                        <span >CSS</span>
+                        <span>{"', '"}</span>
+                        <span >JS</span>
+                        <span>{"', '"}</span>
                         <span >React</span>
                         <span>{"', '"}</span>
-                        <span >Redux</span>
+                        <span >TypeScript</span>
+                        <span>{"', '"}</span>
+                        <span >NextJS</span>
+                        <span>{"', '"}</span>
+                        <span >Ant Design</span>
+                        <span>{"', '"}</span>
+                        <span >Java</span>
                         <span>{"', '"}</span>
                         <span >SQL Server</span>
                         <span>{"'],"}</span>

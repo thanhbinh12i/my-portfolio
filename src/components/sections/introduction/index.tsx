@@ -27,7 +27,7 @@ const Introduction = () => {
                         <br />
                         <br />{t("introSection.heading2")}
                         <i>
-                            <b className='text-pink-100'> Javascript. </b>
+                            <b className='text-pink-100'> Javascript, Typescript. </b>
                         </i>
                         <br />
                         <br />
@@ -42,6 +42,12 @@ const Introduction = () => {
                         {t("introSection.heading5")}
                         <i><b className='text-pink-100'>&nbsp;ReactJS</b> </i>
                         {t("introSection.and")}
+                        <i>
+                            <b className='text-pink-100'>
+                                {" "}
+                                Typescript,
+                            </b>
+                        </i>
                         <i>
                             <b className='text-pink-100'>
                                 {" "}

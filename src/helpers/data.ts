@@ -3,16 +3,16 @@ import nextjsImg from "../assets/project/nextjs.jpeg";
 // import reactNativeImg from '../assets/project/react-native.png';
 import reactNetImg from "../assets/project/react_net.jpg";
 import reactImg from "../assets/project/react.jpg";
-import typescriptMuiImg from "../assets/project/typescriptmui.png";
+import typescriptTaiwind from "../assets/project/typescripttailwind.jpg";
 // import reactUltimateImg from '../assets/project/react-ultimate.png';
 // import springMvcImg from '../assets/project/spring-mvc.png';
 // import springRestImg from '../assets/project/spring-rest.png';
 
 export const APP_DATA = {
-  YOUTUBE_URL: "https://www.youtube.com/@hoidanit",
-  TIKTOK_URL: "https://www.tiktok.com/@hoidanit",
-  UDEMY_URL: "https://www.udemy.com/user/eric-7039/",
-  FACEBOOK_URL: "https://www.facebook.com/askITwithERIC/",
+  YOUTUBE_URL: "https://www.facebook.com",
+  TIKTOK_URL: "https://www.tiktok.com",
+  GITHUB_URL: "https://github.com/thanhbinh12i",
+  FACEBOOK_URL: "https://www.facebook.com/binhdayneee",
 };
 
 export const EXPERIENCES = [
@@ -55,7 +55,7 @@ export const PROJECTS = [
   },
   {
     id: 3,
-    imgPath: typescriptMuiImg,
+    imgPath: typescriptTaiwind,
     title: "Shoppe Clone (In Progress)",
     description:
       "Built with ReactJS and TypeScript, this Shopee clone project is a comprehensive e-commerce platform replicating core functionalities of the popular marketplace. The application features a complete authentication system, product catalog, shopping cart, and checkout process. Leveraging modern technologies including Tailwind CSS and React Query, the project demonstrates frontend development best practices with a focus on performance optimization and SEO. The codebase is fully tested and well-documented, showcasing professional development standards in a real-world application.",

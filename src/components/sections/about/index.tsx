@@ -70,8 +70,8 @@ const About = () => {
                                                 <FaGraduationCap size={36} />
                                             </div>
                                             <div className="info">
-                                                <p className="title">Softwaren Engineer</p>
-                                                <p className="company">FPT UNIVERSITY HCM (FPT)</p>
+                                                <p className="title">Software Engineer</p>
+                                                <p className="company">FPT UNIVERSITY HO CHI MINH (FPT)</p>
                                             </div>
                                         </div>
                                     </div>
@@ -90,7 +90,7 @@ const About = () => {
                         youtube={APP_DATA.YOUTUBE_URL}
                         facebook={APP_DATA.FACEBOOK_URL}
                         tiktok={APP_DATA.TIKTOK_URL}
-                        udemy={APP_DATA.UDEMY_URL}
+                        github={APP_DATA.GITHUB_URL}
                     />
                 </Col >
                 <Col md={6} xs={12} className="d-flex flex-column align-items-center justify-content-center">

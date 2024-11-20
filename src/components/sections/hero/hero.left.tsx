@@ -42,7 +42,7 @@ const HeroLeft = (props: IProps) => {
                 className="mt-md-6 mt-3 mb-md-5 mb-2"
             >
                 <SocialMedia
-                    youtube={APP_DATA.YOUTUBE_URL}
+                    youtube={APP_DATA.INSTAGRAM_URL}
                     facebook={APP_DATA.FACEBOOK_URL}
                     tiktok={APP_DATA.TIKTOK_URL}
                     github={APP_DATA.GITHUB_URL}

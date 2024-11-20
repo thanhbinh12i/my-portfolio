@@ -9,8 +9,19 @@ import { FaGraduationCap } from "react-icons/fa6";
 import Divider from "../divider";
 import { APP_DATA } from "helpers/data";
 import SocialMedia from "../social.media";
+import { useState } from "react";
+import ContactModal from "./contact.modal";
 
 const About = () => {
+    const [showModal, setShowModal] = useState(false);
+
+    const handleContactClick = () => {
+        setShowModal(true);
+    };
+
+    const handleClose = () => {
+        setShowModal(false);
+    };
     return (
         <>
             <Row>
@@ -34,7 +45,7 @@ const About = () => {
                     </div>
                     <div>
                         <p className="text-center brand-red">"Pursuing Your Dreams Is How You Become Homeless ~.~"</p>
-                        <p className="text-center brand-red">--Binhdayne--</p>
+                        <p className="text-center brand-red">--Binhdaynee--</p>
                     </div>
                 </Col >
                 <Col md={6} xs={12} className="d-flex align-items-center justify-content-center">
@@ -71,7 +82,7 @@ const About = () => {
                                             </div>
                                             <div className="info">
                                                 <p className="title">Software Engineer</p>
-                                                <p className="company">FPT UNIVERSITY HO CHI MINH (FPT)</p>
+                                                <p className="company">FPT UNIVERSITY HO CHI MINH (FPT) </p>
                                             </div>
                                         </div>
                                     </div>
@@ -87,20 +98,25 @@ const About = () => {
                 <Col md={6} xs={12} className=" mt-md-5 mt-3">
                     <h3 className="mb-md-5 mb-2">FIND ME ON </h3>
                     <SocialMedia
-                        youtube={APP_DATA.YOUTUBE_URL}
+                        youtube={APP_DATA.INSTAGRAM_URL}
                         facebook={APP_DATA.FACEBOOK_URL}
                         tiktok={APP_DATA.TIKTOK_URL}
                         github={APP_DATA.GITHUB_URL}
                     />
+
                 </Col >
                 <Col md={6} xs={12} className="d-flex flex-column align-items-center justify-content-center">
-                    <AnimationLottie
-                        width="50%"
-                        //animation with rp => convert sang text
-                        // https://github.com/airbnb/lottie-web/issues/2070
-                        animationPath={JSON.parse(CONTACT_LOTTIE)}
-                    />
+                    <div onClick={handleContactClick} style={{ cursor: 'pointer' }} className="d-flex flex-column align-items-center w-100">
+                        <AnimationLottie
+                            width="50%"
+                            animationPath={JSON.parse(CONTACT_LOTTIE)}
+                        />
+                    </div>
                     <h4 className="text-center">Contact me</h4>
+                    <ContactModal
+                        show={showModal}
+                        onHide={handleClose}
+                    />
                 </Col>
             </Row>
             <div className="mb-5"></div>

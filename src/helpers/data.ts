@@ -1,5 +1,6 @@
 // import nestImg from '../assets/project/nestjs.png';
-import nextjsImg from "../assets/project/nextjs.jpeg";
+// import nextjsImg from "../assets/project/nextjs.jpeg";
+import nextjsMuiImg from "../assets/project/nextjs-mui.jpg";
 // import reactNativeImg from '../assets/project/react-native.png';
 import reactNetImg from "../assets/project/react_net.jpg";
 import reactImg from "../assets/project/react.jpg";
@@ -9,7 +10,7 @@ import typescriptTaiwind from "../assets/project/typescripttailwind.jpg";
 // import springRestImg from '../assets/project/spring-rest.png';
 
 export const APP_DATA = {
-  YOUTUBE_URL: "https://www.facebook.com",
+  INSTAGRAM_URL: "https://www.instagram.com/thanhbinh_12ii/",
   TIKTOK_URL: "https://www.tiktok.com",
   GITHUB_URL: "https://github.com/thanhbinh12i",
   FACEBOOK_URL: "https://www.facebook.com/binhdayneee",
@@ -19,12 +20,12 @@ export const EXPERIENCES = [
   {
     id: 1,
     title: {
-      vi: "Sinh Viên",
-      en: "Student",
+      vi: "Làm việc tại nhà",
+      en: "Working at home",
     },
     company: {
-      vi: "Đại Học FPT HCM.",
-      en: "FPT UNIVERSITY HCM Ltd.",
+      vi: "Lập trình với đam mê mỗi ngày",
+      en: "Coding with passion every day",
     },
     duration: {
       vi: "2022 - Hiện tại",
@@ -64,11 +65,12 @@ export const PROJECTS = [
   },
   {
     id: 4,
-    imgPath: nextjsImg,
-    title: "Sound cloud (Coming Soon)",
-    description: "",
-    githubLink: "",
-    demoLink: "",
+    imgPath: nextjsMuiImg,
+    title: "Sound cloud (In Progress)",
+    description:
+      "A music streaming platform built with Next.js, TypeScript and Material-UI. Features include waveform visualization, timed comments, playlist management, and multi-provider authentication. Complete with an intuitive admin dashboard for content management.",
+    githubLink: "https://github.com/thanhbinh12i/SoundCloud",
+    demoLink: "https://sound-cloud-binhdaynee.vercel.app/",
   },
 ];
 

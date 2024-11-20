@@ -1,8 +1,6 @@
 import { FaFacebook } from "react-icons/fa6";
-import { SiGithub } from "react-icons/si";
+import { SiGithub, SiInstagram } from "react-icons/si";
 import { FaTiktok } from "react-icons/fa";
-import { SiYoutubeshorts } from "react-icons/si";
-
 interface IProps {
     youtube: string;
     tiktok: string;
@@ -16,7 +14,7 @@ const SocialMedia = (props: IProps) => {
     return (
         <div className="my-4 d-flex items-center gap-3">
             <a href={youtube} target='_blank' className="highlight" title="Youtube">
-                <SiYoutubeshorts size={30} />
+                <SiInstagram size={30} />
             </a>
             <a href={tiktok} target='_blank' className="highlight" title="Tiktok">
                 <FaTiktok size={30} />
